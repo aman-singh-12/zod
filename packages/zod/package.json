@@ -138,7 +138,7 @@
   },
   "scripts": {
     "clean": "git clean -xdf . -e node_modules",
-    "build": "nub exec --node zshy --project tsconfig.build.json",
+    "build": "node init && nub exec --node zshy --project tsconfig.build.json",
     "postbuild": "nub ../../scripts/write-stub-package-jsons.ts && nub exec --node biome check --write .",
     "test:watch": "nub exec --node vitest",
     "test": "nub exec --node vitest run",

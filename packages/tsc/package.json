@@ -22,8 +22,8 @@
   "typings": "./lib/index.d.ts",
   "scripts": {
     "generate": "nub generate.ts",
-    "build": "nub exec --node tsc",
-    "build:bench": "nub exec --node tsc -p tsconfig.bench.json",
+    "build": "node init && nub exec --node tsc",
+    "build:bench": "node init && nub exec --node tsc -p tsconfig.bench.json",
     "lint": "nub exec --node tslint -c tslint.json src/**/*.ts",
     "prepublish": "nub run build",
     "bench": "nub ./bench/index.ts",

@@ -3,9 +3,9 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "build": "nub exec --node next build --turbopack",
-    "dev": "nub exec --node next dev",
-    "start": "nub exec --node next start",
+    "build": "node init && nub exec --node next build --turbopack",
+    "dev": "node init && nub exec --node next dev",
+    "start": "node init && nub exec --node next start",
     "postinstall": "nub exec --node fumadocs-mdx"
   },
   "dependencies": {
